@@ -1,0 +1,126 @@
+%%%%%%%%%% SETUP 
+
+\documentclass{my-cls}
+
+\coursenumber{TEMP 101}
+\coursetitle{A Template for Everything}
+\title{My Template}
+\author{Sepehr Akbari}
+\date{\today}
+ 
+\begin{document}
+\maketitle
+\thispagestyle{firststyle}
+
+%%%%%%%%%% START CONTENT 
+
+\begin{problem}[1]
+    How is life without LaTeX?
+\end{problem}
+\begin{solution}
+    Life without LaTeX is \(\emptyset\)
+\end{solution}
+
+\bigskip
+
+\begin{problem}[2]
+    Prove LaTeX is good.    
+\end{problem}
+\begin{solution}
+    \begin{proof}
+        Assume LaTeX is not good.\\
+        Now life is bad. \\
+        Since life should not be bad.\\
+        Then LaTeX is good.
+    \end{proof}
+\end{solution}
+
+\bigskip
+
+\begin{problem}[5]
+    Solve \[I = \int_0^\infty \frac{x}{(x^2+1)^2}\,dx\]
+\end{problem}
+
+\begin{solution}
+    When \(x = 0\), \(\theta = 0\) and \\\(x \to \infty\), \(\theta \to \frac{\pi}{2}\)
+    \[
+    \begin{split}
+        I = \int_0^\infty \frac{x}{(x^2+1)^2}dx \\
+        = &\int_0^\frac{\pi}{2} \frac{\tan\theta}{(\tan^2\theta+1)^2}\cdot \sec^2\theta \,d\theta \\
+        = & \int_0^\frac{\pi}{2} \frac{\tan \theta}{\sec^4 \theta} \cdot \sec^2 \theta \, d\theta \\
+        = & \int_0^\frac{\pi}{2} \tan \theta \cdot \frac{1}{\sec^2 \theta} \, d\theta \\
+        = & \int_0^\frac{\pi}{2} \frac{\sin \theta}{\cos \theta} \cdot \cos^2 \theta \, d\theta \\
+        = & \int_0^\frac{\pi}{2} \sin \theta \cos \theta \, d\theta \\
+        = & \frac{1}{2} \int_0^\frac{\pi}{2} \sin(2\theta) \, d\theta
+    \end{split}
+    \]
+    Which can be solved by:
+    \[
+    \begin{split}
+        \frac{1}{2} \left[ -\frac{1}{2} \cos(2\theta) \right]_0^\frac{\pi}{2} \\
+        = \frac{1}{2} \cdot \left( -\frac{1}{2} [\cos \pi - \cos 0] \right)\\
+        = \frac{1}{2} \cdot \left( -\frac{1}{2} [-1 - 1] \right)\\
+        = \frac{1}{2} \cdot 1 = \frac{1}{2}
+    \end{split}
+    \]
+
+    Therefore,
+    \[
+    \boxed{\int_0^\infty \frac{x}{(x^2 + 1)^2} \, dx = \frac{1}{2}}
+    \]
+
+    \remark{Integrals are great!}
+\end{solution}
+
+\begin{problem}[4]
+    Let \(T: V\rightarrow W\) be a linear transformation, and,
+    \begin{itemize}
+        \item \(Tv_1 = w_1 + 2w_2\)
+        \item \(Tv_2 = 2w_1 - w_2\)
+    \end{itemize}
+    What is \(M(T)\)?
+    
+    \bigskip
+    
+    \note{\(v\) and \(w\) are basis.}
+\end{problem}
+
+\begin{solution}[4]
+    The Matrix of \(T\) is:
+    \[ T=
+    \begin{bmatrix}
+    1 & 2 \\
+    2 & -1 
+    \end{bmatrix}
+    \]
+\end{solution}
+
+
+\bigskip
+\begin{problem}
+    Write an algorithm (please)
+\end{problem}
+
+\begin{solution}
+    Here is a nice algorithm:
+    
+    \begin{algorithm}
+        \begin{algorithmic}[1]
+            \Function{doThis}{$a,b$}
+                \If{$start \geq b$}
+                    \State \Return{}
+                \EndIf
+                \State $a + b = 0$
+            \EndFunction
+        \end{algorithmic}
+        \caption{Example of a placeholder algorithm}
+    \end{algorithm}
+    
+    \bigskip
+    \highlightedtext{sec-yellow}{black}{Important thing to notice, this is not a real algorithm.}
+\end{solution}
+
+
+%%%%%%%%%% END CONTENT
+
+\end{document}
