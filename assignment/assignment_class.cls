@@ -3,7 +3,7 @@
 %%%%%%%%%%
 
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{sepehr-temp}[2025/05/01 sepehr-temp LaTeX class]
+\ProvidesClass{assignment_class}[2025/05/01 assignment_class LaTeX class]
 \LoadClass[10pt]{article}
 \RequirePackage[top=1in, bottom=1in, left=0.75in, right=0.75in, headheight=13.6pt]{geometry}
 
