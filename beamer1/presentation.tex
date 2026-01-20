@@ -1,0 +1,64 @@
+% !TeX program = lualatex
+
+\documentclass[
+	english,
+	sections numbered,
+	xcolor=dvipsnames,
+	aspectratio=169,
+]{beamer}
+
+\usepackage{babel}
+\usepackage[babel]{microtype}
+\usepackage[babel]{csquotes}
+\usepackage[american]{isodate}
+
+\usepackage[T1]{fontenc}
+\usepackage{FiraMono}
+
+\usetheme[progressbar=frametitle]{metropolis}
+
+\usepackage{graphicx}
+\usepackage{pgfplots}
+\usepackage{tikz}
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsfonts}
+\usepackage{amsthm}
+\usepackage{siunitx}
+\usepackage{bm}
+\usepackage{dsfont}
+\usepackage{mathtools}
+
+\usepackage{booktabs}
+\usepackage{tabularx}
+
+%\usepackage{biblatex}
+%\bibliography{literature.bib}
+
+\input{setup/setup-colors.tex}
+\input{setup/setup-beamer.tex}
+\input{setup/setup-math.tex}
+\input{setup/setup-plots.tex}
+
+\title{Title of your Presentation}
+\author{Author 1\inst{1}, Author 2\inst{1}, and Author 3\inst{2}}
+\institute[]{%
+	\inst{1} Institute for Science, University Name, Country\\
+	\inst{2} Department of Science, Different University, Country
+}
+\date{Date or Conference Name}
+
+\titlegraphic{%
+  \includegraphics[height=.22\textheight]{logo/lfc_color_logo.png}
+%   \hspace*{0.5cm}
+%   \includegraphics[height=.17\textheight]{logo/csc_logo.png}
+}
+
+\begin{document}
+\maketitle
+
+\input{content/sample}
+
+
+\end{document}

@@ -9,3 +9,9 @@
 *.bbl
 *.blg
 *.gz
+*.nav
+*.snm
+*.vrb
+*.lof
+*.ttf
+Fira_Sans
